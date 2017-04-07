@@ -1,0 +1,14 @@
+{
+  "name": "andela-bootcamp-day0",
+  "version": "1.0.0",
+  "description": "Self-learning clinic Day 0 exercises",
+  "main": "app/exercises.js",
+  "scripts": {
+    "test": "jasmine-node spec/exercisesSpec.js"
+  },
+  "author": "Memuna Haruna",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
