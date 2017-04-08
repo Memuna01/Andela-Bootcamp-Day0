@@ -19,24 +19,24 @@ module.exports = {
 
 },
 
-aritGeo: function (arr){
+aritGeo: function (inputArray){
     var result = "";
-    if(arr.length == 0){
+    if(inputArray.length == 0){
         return 0;
     }
 
-    if(arr.length <= 2){
-        return arr;
+    if(inputArray.length <= 2){
+        return inputArray;
     }
 
     else{
-        for(var i = 2; i < arr.length - 1; i++){
-            let a = arr[1] - arr[0];
-            let r = arr[1]/arr[0];
-            if((arr[i + 1] - arr[i]) === a){
+        for(var i = 2; i < inputArray.length - 1; i++){
+            let a = inputArray[1] - inputArray[0];
+            let r = inputArray[1] / inputArray[0];
+            if((inputArray[i + 1] - inputArray[i]) === a){
                 result = "Arithmetic"; 
             }
-            else if((arr[i] / arr[i -1]) === r){
+            else if((inputArray[i] / inputArray[i -1]) === r){
                 result = "Geometric";
             }
 
