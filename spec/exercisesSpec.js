@@ -99,3 +99,35 @@ describe("Fizz Buzz tests ", function() {
     });
   });
 })();
+
+describe("Get Prime tests ", function() {
+
+  it("should return invalid input for -2", function() {
+    expect(app.getPrimes(-2)).toBe('invalid input');
+  });
+
+  it("should return invalid input for hello", function() {
+    expect(app.getPrimes("hello")).toBe('invalid input');
+  });
+
+  it("should return invalid input for 0", function() {
+    expect(app.getPrimes(0)).toBe('invalid input');
+  });
+
+  it("should return [2, 3, 5] for 7", function() {
+    expect(app.getPrimes(7)).toBe([2, 3, 5]);
+  });
+
+  it("should return [2, 3, 5, 7, 9, 11] for 13", function() {
+    expect(app.getPrimes(13)).toBe([2, 3, 5, 7, 9, 11]);
+  });
+
+  it("should return [2,3,5,7,11,13,17,19,23,29] for 30", function() {
+    expect(app.getPrimes(30)).toBe([2,3,5,7,11,13,17,19,23,29]);
+  });
+
+  it("should return [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59] for 60", function() {
+    expect(app.getPrimes(60)).toBe([2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59]);
+  });
+
+});
