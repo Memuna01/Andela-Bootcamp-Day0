@@ -115,19 +115,19 @@ describe("Get Prime tests ", function() {
   });
 
   it("should return [2, 3, 5] for 7", function() {
-    expect(app.getPrimes(7)).toBe([2, 3, 5]);
+    expect(app.getPrimes(7)).toEqual([2, 3, 5]);
   });
 
   it("should return [2, 3, 5, 7, 9, 11] for 13", function() {
-    expect(app.getPrimes(13)).toBe([2, 3, 5, 7, 9, 11]);
+    expect(app.getPrimes(13)).toEqual([2, 3, 5, 7, 11]);
   });
 
   it("should return [2,3,5,7,11,13,17,19,23,29] for 30", function() {
-    expect(app.getPrimes(30)).toBe([2,3,5,7,11,13,17,19,23,29]);
+    expect(app.getPrimes(30)).toEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29]);
   });
 
   it("should return [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59] for 60", function() {
-    expect(app.getPrimes(60)).toBe([2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59]);
+    expect(app.getPrimes(60)).toEqual([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59]);
   });
 
 });
